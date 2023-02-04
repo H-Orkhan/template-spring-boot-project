@@ -1,0 +1,19 @@
+management:
+  server:
+    port: ${MANAGEMENT_SERVER_PORT}
+  endpoint:
+    health:
+      show-details: always
+      enabled: true
+    metrics:
+      enabled: true
+    info:
+      enabled: true
+    beans:
+      enabled: true
+    shutdown:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: info,health

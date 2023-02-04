@@ -1,0 +1,76 @@
+databaseChangeLog:
+  - changeSet:
+      id: 01
+      author: orkhan
+      changes:
+
+        - createTable:
+            columns:
+              - column:
+                  name: id
+                  type: BINARY(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: name
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: phone
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: false
+            tableName: CUSTOMERS
+
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  value: 84b104d5-3110-4e0f-b7e8-d1e9ee042b51
+              - column:
+                  name: name
+                  value: 'User_1'
+              - column:
+                  name: phone
+                  value: '01234567'
+            tableName: CUSTOMERS
+
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  value: 77804919-fbb4-4085-887c-b0df1e3276fe
+              - column:
+                  name: name
+                  value: 'User_2'
+              - column:
+                  name: phone
+                  value: '76543210'
+            tableName: CUSTOMERS
+
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  value: 309f51c9-4b02-4f7c-b13c-4e0f03e53304
+              - column:
+                  name: name
+                  value: 'User_3'
+              - column:
+                  name: phone
+                  value: '00000000'
+            tableName: CUSTOMERS
+
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  value: 2614f706-1964-444a-bd16-c0d5bee862e5
+              - column:
+                  name: name
+                  value: 'User_4'
+              - column:
+                  name: phone
+                  value: '11111111'
+            tableName: CUSTOMERS

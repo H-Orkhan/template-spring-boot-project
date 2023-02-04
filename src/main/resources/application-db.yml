@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    driver-class-name: ${DB_CLASS_NAME}
+  h2:
+    console:
+      enabled: true
+  jpa:
+    hibernate:
+      ddl-auto: none
+    database-platform: ${DB_PLATFORM}
+    liquibase:
+      enabled: true
+      drop-first: false
+      change-log: db.changelog-master.yaml
+      default-schema: public
+      database-change-log-table: DATABASE_CHANGELOG
+      database-change-log-lock-table: DATABASE_CHANGELOG_LOCK
